@@ -1,0 +1,384 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .head_container {
+    max-width: 90%;
+    margin: auto;
+  }  
+
+  .header {
+    min-height: 60vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url('../img/room2.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+  
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 90px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #f5e6cc;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f5e6cc;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #f5e6cc;
+    position: absolute;
+    top: 59%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;    
+}
+
+.text-box p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #f5e6cc;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    nav-links ul {
+        padding: 30px;
+    }
+}
+
+/*--------------gallary--------*/
+.gallary img {
+    width: 270px;
+    height: 350px;
+  }
+  
+  .owl-carousel .owl-next,
+  .owl-carousel .owl-prev {
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+    top: 35%;
+    background: white !important;
+    transition: 0.5s;
+  }
+  
+  .owl-carousel .owl-prev {
+    left: 33px;
+  }
+  
+  .owl-carousel .owl-next {
+    right: 33px;
+  }
+  
+  .owl-carousel .owl-next:hover,
+  .owl-carousel .owl-prev:hover {
+    background: #C1B086 !important;
+  }
+  
+  /*--------------gallary--------*/
+  
+  /*--------------about--------*/
+.top {
+    margin-top: 10%;
+  }
+  
+  .mtop {
+    margin-top: 5%;
+  }
+  
+  .left, .right {
+    width: 50%;
+  }
+  
+  .about {
+    margin-bottom: 50px;
+  }
+  
+  .about .img {
+    position: relative;
+  }
+  
+  .about .image1 {
+    width: 310px;
+    height: 450px;
+  }
+  
+  .about .image2 {
+    width: 325px;
+    height: 220px;
+    position: absolute;
+    bottom: 5px;
+    z-index: 2;
+    right: 30%;
+  }
+  
+  .heading {
+    position: relative;
+  }
+  
+  .heading::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #C1B086;
+  }
+  
+  .heading h5 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    color: #5f5f5f;
+  }
+  
+  .heading h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0 40px 0;
+    color: #222222;
+  }
+  
+  .heading p {
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: #5f5f5f;
+    margin: 0 0 20px 50px;
+  }
+  
+  .heading .btn1 {
+    margin: 50px 0 20px 50px;
+  }
+  
+  .btn1 {
+    padding: 12px 30px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    background-color: #6c757d;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn1:hover {
+    background-color: #D9A464;
+    transform: translateY(-5px);
+  }
+
+  /*--------------about--------*/
+  
+/*--------------wrapper--------*/
+.wrapper {
+    background-image: url("../img/a1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+    position: relative;
+  }
+  
+  .wrapper .text {
+    background: #3f9cc1;
+    padding: 50px;
+    width: 40%;
+    height: 600px;
+    position: absolute;
+    top: -13%;
+    right: 10%;
+    padding-top: 7%;
+  }
+  
+  .wrapper .content {
+    color: #000;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+  }
+  
+  .wrapper h2 {
+    font-weight: 400;
+  }
+  
+  .wrapper p {
+    margin: 20px 0 50px 0;
+    line-height: 30px;
+  }
+  
+  .wrapper i {
+    margin: 5px 20px 0 0;
+  }
+  
+  /*--------------wrapper--------*/
+
+/*FOOTER*/
+.footer {
+    background: #000;
+    padding: 15px 0 15px 0;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+  
+  }
+  
+  .footer .row {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+
+    color: gray;
+    font-size: 0.8em;
+  }
+  
+  .footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+    padding: 0 10px;
+  }
+  
+  .footer .row a:hover {
+    color: #fff;
+  }
+  
+  .footer .row ul {
+    width: 100%;
+  }
+  
+  .footer .row ul li {
+    display: inline-block;
+    margin: 0 30px;
+  }
+  
+  .footer .row a i {
+    font-size: 2em;
+    margin: 0 -1%;
+  }
+
+  .privacy-policy-link {
+    font-size: 10px;
+    color: #c8c8c8;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  .copyright{
+    font-size: 10px;
+    color: #b2b0b0;
+    margin-top: 5px;
+  }
+
+  @media (max-width:720px) {
+    .footer {
+      text-align: left;
+      padding: 5%;
+    }
+  
+    .footer .row {
+      flex-wrap: wrap;
+    }
+  
+    .footer .row ul li {
+      display: block;
+      margin: 10px 0;
+      text-align: left;
+    }
+  }
+
+
